@@ -1,5 +1,25 @@
-# nbdev template
+# nbdt384
+> Test case for nbdev issue #384
 
-Use this template to more easily create your [nbdev](https://nbdev.fast.ai/) project.
 
-_If you are using an older version of this template, and want to upgrade to the theme-based version, see [this helper script](https://gist.github.com/hamelsmu/977e82a23dcd8dcff9058079cb4a8f18) (more explanation of what this means is contained in the link to the script)_.
+## Logbook nbdt_issue384
+
+This test case was assembled on a MacOS system (OS version 10.14.6).
+
+To reproduce my findings, you could follow the steps below:
+
+    pyenv virtualenv 3.7.9 iss384
+
+    git clone https://github.com/urspb/nbdt_issue384.git
+    cd nbdt_issue384
+    pyenv local iss384
+    pip install --upgrade pip
+    pip install nbdev
+    pip list --local | grep nbdev
+
+    # edit settings.ini
+    nbdev_install_git_hooks
+
+## Test #384
+
+For the test of `nbdev_nb2md` please look into `00_core`
