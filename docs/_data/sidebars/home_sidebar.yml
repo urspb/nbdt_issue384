@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: test384
+      title: test381
       url: core.html
     - output: web,pdf
       title: Title
