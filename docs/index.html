@@ -32,7 +32,7 @@ nb_path: "index.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Logbook-nbdt_issue381">Logbook nbdt_issue381<a class="anchor-link" href="#Logbook-nbdt_issue381"> </a></h2><p>This test case was assembled on a MacOS system (OS version 10.14.6).</p>
-<p>To reproduce my findings, you could follow the steps below:</p>
+<p>To reproduce my findings, you might want follow the steps below:</p>
 
 </div>
 </div>
@@ -47,9 +47,12 @@ cd nbdt_issue381
 pyenv local iss381
 pip install --upgrade pip
 pip install nbdev
+pip install matplotlib
+
+# lookup version of nbdev
 pip list --local | grep nbdev
 
-# edit settings.ini
+# ToDo: edit settings.ini
 nbdev_install_git_hooks</code></pre>
 
 </div>
@@ -57,7 +60,7 @@ nbdev_install_git_hooks</code></pre>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Test-#381">Test #381<a class="anchor-link" href="#Test-#381"> </a></h2><p>For the test of <code>nbdev_nb2md</code> please look into notebook <code>00_core</code>.</p>
+<h2 id="Test-#381">Test #381<a class="anchor-link" href="#Test-#381"> </a></h2><p>For the test of <code>nbdev_nb2md</code> please look into notebook <code>00_core</code>. There are also some explanations and findings.</p>
 
 </div>
 </div>
